@@ -1,25 +1,26 @@
 
+/* Menu Container */
 .menu {
     width: 250px;
-    height:100pvh;
     background-color: black;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #ddd;
+    border: 1px solid #ddd;
+
 }
 
-
+/* Header Styling */
 .header {
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     border-bottom: 1px solid #ddd;
 }
 
 .logo {
-    width: 30px;
-    height: auto;
-    margin-right: 5px;
+    width: 40px; /* Adjust width as needed */
+    height: 70px; /* Ensure the height is consistent with the logo's aspect ratio */
+     /* Reduced space for better alignment with text */
 }
 
 .header-text {
@@ -32,11 +33,11 @@
     margin: 0;
 }
 
-.header-text p {
-    margin: 5px 0 0;
-    color: #888;
+/* Paragraph Styling */
+.p {
+    margin: 10px 10px 20px;
+    color: white;
 }
-
 
 hr {
     margin: 0;
@@ -44,19 +45,18 @@ hr {
     border-top: 1px solid #ddd;
 }
 
-
+/* Menu List Styling */
 .menu--list {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 ;
 }
 
-
+/* Section Styling */
 .section {
-    margin: 20px 0;
+    margin: 0;
 }
-
 
 .section-title {
     font-size: 1rem;
@@ -65,36 +65,38 @@ hr {
     border: none; 
 }
 
-
+/* Menu Item Styling */
 .item {
     display: flex;
     align-items: center;
-    padding: 10px 5px;
+    padding: 10px 10px; /* Adjust padding for full-width effect */
     text-decoration: none;
     color: white;
-    background-color: #06D001;
+    background-color:rgb(43, 255, 0);
     font-size: 1rem;
-    margin-bottom: 5px ;
-
+    margin-bottom: 5px;
+    border: 1px solid transparent; /* Add a border */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    width: calc(100%); /* Ensure full-width with padding */
 }
-
 
 .item:hover {
     background-color: #059212;
     border-radius: 4px;
+     /* Optional: Add border color on hover */
 }
 
-
-.icon {
+/* Image Styling */
+.image {
     font-size: 1rem;
     margin-left: auto;
     color: white;
 }
 
-
+/* Logout Button Styling */
 .logout {
-    margin-top: 50px;
-    padding: 10px 10px;
+    margin: 30px 2px;
+    padding: 12px 4px;
     text-align: left;
     color: white;
     text-decoration: none;
@@ -102,15 +104,14 @@ hr {
     background-color: #c62828;
     display: flex;
     align-items: center;
+    width: calc(96%);
 }
-
 
 .logout:hover {
     background-color: #b71c1c;
     border-radius: 5px;
 }
 
-
 .logout-text {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
