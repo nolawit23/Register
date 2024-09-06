@@ -2,6 +2,8 @@ import React from 'react';
 import hero from '../assets/hero.jpg';
 import '../style/form.css';
 import logoimg from '../assets/logoimg.png';
+import mail from '../assets/mail.png';
+import key from '../assets/key.png';
 
 const Form = () => {
   return (
@@ -16,11 +18,20 @@ const Form = () => {
         </h4>
       </div>
       <form className="form">
-        <div className="form-group input-group">
+        <div className="form-group">
+          <div className="icon-container">
+            <img src={mail} alt="mail" className="mail" />
+          </div>
           <input type="text" id="username" name="username" className="input" placeholder="Email" />
         </div>
-        <div className="form-group input-group">
+        <div className="form-group">
+          <div className="icon-container">
+            <img src={key} alt="key" className="key" />
+          </div>
           <input type="password" id="password" name="password" className="input" placeholder="Password" />
+        </div>
+        <div className=" btn-container"><button  type="submit" className="btn">LOGIN</button>
+        <button type="submit" className="btn">Help & support</button>
         </div>
       </form>
     </div>

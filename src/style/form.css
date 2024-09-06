@@ -1,65 +1,123 @@
 
 .container {
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center;    /* Center horizontally */
-  padding: 20px;          /* Add some padding */
-     /* Background color for visibility */
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-/* Flex Container for Hero, Logo, and Title */
+
 .header-container {
-  display: flex;
-  align-items:center; /* Align items vertically centered */
-  justify-content: space-between; /* Space between items */
-  max-width: 800px; /* Adjust max-width as needed */
-  margin-bottom: 10px; /* Space below the header */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Hero Image Styling */
 .hero {
-  width: 200px; /* Adjust the width as needed */
-  height: auto;
-  object-fit: cover; /* Ensure the image covers the area */
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
 }
 
-/* Logo Image Styling */
+
+.logo {
+  display: block;
+  margin: 10px auto;
+}
+
 .logoimg {
-  width: px; /* Adjust the size as needed */
+  width: 40px; 
   height: auto;
-  margin: 0 10px; /* Space on either side of the logo */
 }
 
-/* Title Styling */
+
 .title {
-  font-size: 18px; /* Adjust font size as needed */
+  font-size: 1.5rem;
   font-weight: bold;
-  margin: 10px 20px;
-  text-align:left; 
-  width: 100%;/* Space on either side of the title */
+  margin: 10px 0;
 }
 
-/* Form Styling */
+.title span {
+  color: chartreuse; 
+}
+
+
 .form {
   display: flex;
-  flex-direction: column; /* Stack form elements vertically */
+  flex-direction: column;
   width: 100%;
-  max-width: 400px; /* Max width of the form */
-  margin-top: 20px; /* Space above the form */
+  max-width: 400px;
 }
 
 .form-group {
-  margin-bottom: 15px; /* Space between form groups */
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.icon-container {
+  margin-right: 10px; 
+ padding: 6px 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.mail, .key {
+  width: 20px; 
+  height: auto;
 }
 
 .input {
-  width: 100%;
+  flex: 1;
   padding: 10px;
-  border: 1px solid #ddd; /* Light border for input fields */
-  border-radius: 4px; /* Rounded corners */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
 }
 
-.input-group {
+.input::placeholder {
+  color: #ccc; 
+}
+
+
+.btn-container {
   display: flex;
-  flex-direction: column; /* Stack input fields vertically */
+  justify-content:column;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Adds space between buttons */
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* Text color */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.btn.login-btn {
+  background-color: #007bff; /* Blue color for login button */
+}
+
+.btn.help-btn {
+  background-color: #28a745; /* Green color for help/support button */
+}
+
+.btn.login-btn:hover {
+  background-color: #0056b3; /* Darker blue for login button on hover */
+}
+
+.btn.help-btn:hover {
+  background-color: #218838; /* Darker green for help/support button on hover */
+}
+
+.btn:active {
+  transform: scale(0.98); /* Slightly scales down the button on click */
 }
